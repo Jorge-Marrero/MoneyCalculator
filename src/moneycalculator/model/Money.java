@@ -1,4 +1,4 @@
-package moneycalculator;
+package moneycalculator.model;
 
 public class Money {
     private final double amount;
@@ -15,7 +15,5 @@ public class Money {
 
     public Currency getCurrency() {
         return currency;
-    }
-    
-    
+    }  
 }

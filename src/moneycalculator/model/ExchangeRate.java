@@ -1,17 +1,13 @@
-package moneycalculator;
-
-import java.time.LocalDate;
+package moneycalculator.model;
 
 public class ExchangeRate {
     private final Currency from;
     private final Currency to;
-    private final LocalDate date;
     private final double rate;
 
-    public ExchangeRate(Currency from, Currency to, LocalDate date, double rate) {
+    public ExchangeRate(Currency from, Currency to, double rate) {
         this.from = from;
         this.to = to;
-        this.date = date;
         this.rate = rate;
     }
 
@@ -23,13 +19,7 @@ public class ExchangeRate {
         return to;
     }
 
-    public LocalDate getDate() {
-        return date;
-    }
-
     public double getRate() {
         return rate;
-    }
-    
-    
+    } 
 }
